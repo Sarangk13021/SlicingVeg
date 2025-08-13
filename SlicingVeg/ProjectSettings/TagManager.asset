@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Knife
   - Drag
+  - Parts
   layers:
   - Default
   - TransparentFX
