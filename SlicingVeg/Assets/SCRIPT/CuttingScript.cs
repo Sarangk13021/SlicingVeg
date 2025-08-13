@@ -18,13 +18,8 @@ public class CuttingScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Parts") )
         {
-            //Debug.Log("Entered");
-            //Vegitables vgpart = other.GetComponent<Vegitables>();
-            //if (vgpart != null)
-            //{
-            //    vgpart.Cutted();
-            //}
-            if (Input.GetKey(KeyCode.Space)) // Direct check here
+            
+            if (Input.GetKey(KeyCode.Space))
             {
                 Vegitables vegPart = other.GetComponent<Vegitables>();
 
@@ -35,7 +30,7 @@ public class CuttingScript : MonoBehaviour
             }
             else
             {
-                Debug.Log("Not cutting - Space key not pressed");
+                Debug.Log("Not cutting");
             }
         }
     }
